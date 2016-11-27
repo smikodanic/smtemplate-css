@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Two Columns - Transition v.2.</title>
+	<title>Two Columns - Collapsible</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -11,16 +11,16 @@
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap-theme.min.css">
 
-	<link rel="stylesheet" type="text/css" href="../css/02two_columns_transition_v2.css">
+	<link rel="stylesheet" type="text/css" href="../css/05two_columns_flex.css">
 
 </head>
 
 <body>
 
-	<div id="sidebarwrapper">
-		<button class="btn btn-sm btn-default"></button>
-		<nav>
-			<h4>MENU (collapsible)</h4>
+	<div class="flex-container">
+
+		<nav id="sidebar" class="flex-item">
+			<h4>SIDEBAR (menu)</h4>
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus nemo id consequatur
 			aliquam debitis recusandae quo quas, ut perspiciatis reiciendis magni dolor et neque eaque
 			qui facilis odio fugit placeat.
@@ -39,36 +39,40 @@
 			sed vitae commodi veniam quas! Doloremque maiores sit, molestias suscipit unde exercitationem.
 			<br><br>-- END --<br><br>
 		</nav>
+
+		<main id="content" class="flex-item">
+			<button class="btn btn-default"><i class="fa fa-bars"></i></button>
+
+
+			<section>
+				<h2>CONTENT</h2>
+
+				<br><br>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta eum, quis ratione corrupti itaque hic ducimus voluptates corporis
+				sed vitae commodi veniam quas! Doloremque maiores sit, molestias suscipit unde exercitationem.
+
+				<br><br><br><br><br>
+				<br><br><br><br><br>
+				<br><br><br><br><br>
+				<br><br><br><br><br>
+				<br><br><br><br><br>
+				<br><br><br><br><br>
+				<br><br><br><br><br>
+				<br><br><br><br><br>
+				<br><br><br><br><br>
+				<br><br><br><br><br>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta eum, quis ratione corrupti itaque hic ducimus voluptates corporis
+				sed vitae commodi veniam quas! Doloremque maiores sit, molestias suscipit unde exercitationem.
+				<br><br>-- BOTTOM --<br><br>
+			</section>
+
+			<footer>
+				Cloud j.d.o.o. &copy; 2016
+				<span class="pull-right">Footer here!</span>
+			</footer>
+		</main>
+
 	</div>
-
-
-	<section>
-
-		<h2>SECTION</h2>
-		<br><br>
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta eum, quis ratione corrupti itaque hic ducimus voluptates corporis
-		sed vitae commodi veniam quas! Doloremque maiores sit, molestias suscipit unde exercitationem.
-
-		<br><br><br><br><br>
-		<br><br><br><br><br>
-		<br><br><br><br><br>
-		<br><br><br><br><br>
-		<br><br><br><br><br>
-		<br><br><br><br><br>
-		<br><br><br><br><br>
-		<br><br><br><br><br>
-		<br><br><br><br><br>
-		<br><br><br><br><br>
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta eum, quis ratione corrupti itaque hic ducimus voluptates corporis
-		sed vitae commodi veniam quas! Doloremque maiores sit, molestias suscipit unde exercitationem.
-		<br><br>-- BOTTOM --<br><br>
-
-		<footer>
-			Cloud j.d.o.o. &copy; 2016
-			<span class="pull-right">Footer here!</span>
-		</footer>
-
-	</section>
 
 
 
@@ -77,10 +81,10 @@
 <script>
 	$(document).ready(function () {
 		$('button').on('click', function () {
-			if ($('#sidebarwrapper').hasClass('show-sidebar')) {
-				$('#sidebarwrapper').removeClass('show-sidebar');
+			if ($('#sidebar').hasClass('hide-sidebar')) {
+				$('#sidebar').removeClass('hide-sidebar');
 			} else {
-				$('#sidebarwrapper').addClass('show-sidebar');
+				$('#sidebar').addClass('hide-sidebar');
 			}
 
 		})

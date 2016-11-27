@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Two Columns - Transition</title>
+	<title>Two Columns - Collapsible</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -11,32 +11,38 @@
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap-theme.min.css">
 
-	<link rel="stylesheet" type="text/css" href="../css/03two_columns_transition.css">
+	<link rel="stylesheet" type="text/css" href="../css/04two_columns_collapsible.css">
 
 </head>
 
 <body>
 
-	<aside>
-		<h4>ASIDE (SIDEBAR)</h4>
-		<br><br><br><br><br>
-		<br><br><br><br><br>
-		<br><br><br><br><br>
-		<br><br><br><br><br>
-		<br><br><br><br><br>
-		<br><br><br><br><br>
-		<br><br><br><br><br>
-		<br><br><br><br><br>
-		<br><br><br><br><br>
-		<br><br><br><br><br>
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta eum, quis ratione corrupti itaque hic ducimus voluptates corporis
-		sed vitae commodi veniam quas! Doloremque maiores sit, molestias suscipit unde exercitationem.
-		<br><br>-- BOTTOM --
-	</aside>
+	<div id="sidebarwrapper">
+		<button class="btn btn-sm btn-default"></button>
+		<nav>
+			<h4>MENU (collapsible)</h4>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus nemo id consequatur
+			aliquam debitis recusandae quo quas, ut perspiciatis reiciendis magni dolor et neque eaque
+			qui facilis odio fugit placeat.
+
+			<br><br><br><br><br>
+			<br><br><br><br><br>
+			<br><br><br><br><br>
+			<br><br><br><br><br>
+			<br><br><br><br><br>
+			<br><br><br><br><br>
+			<br><br><br><br><br>
+			<br><br><br><br><br>
+			<br><br><br><br><br>
+			<br><br><br><br><br>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta eum, quis ratione corrupti itaque hic ducimus voluptates corporis
+			sed vitae commodi veniam quas! Doloremque maiores sit, molestias suscipit unde exercitationem.
+			<br><br>-- END --<br><br>
+		</nav>
+	</div>
 
 
 	<section>
-		<button class="btn btn-default"><i class="fa fa-2x fa-bars"></i></button>
 
 		<h2>SECTION</h2>
 		<br><br>
@@ -61,17 +67,20 @@
 			Cloud j.d.o.o. &copy; 2016
 			<span class="pull-right">Footer here!</span>
 		</footer>
+
 	</section>
+
+
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script>
 	$(document).ready(function () {
 		$('button').on('click', function () {
-			if ($('body').hasClass('hide-sidebar')) {
-				$('body').removeClass('hide-sidebar');
+			if ($('#sidebarwrapper').hasClass('show-sidebar')) {
+				$('#sidebarwrapper').removeClass('show-sidebar');
 			} else {
-				$('body').addClass('hide-sidebar');
+				$('#sidebarwrapper').addClass('show-sidebar');
 			}
 
 		})

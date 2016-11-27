@@ -25,6 +25,7 @@ section button {
   position: absolute;
   top: 8px;
   right: 8px;
+  outline: none;
 }
 section footer {
   position: absolute;
