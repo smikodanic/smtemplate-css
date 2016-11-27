@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<!-- Page title -->
+	<title>Regoch test template</title>
+
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+	<style>
+
+/* Sidebar Hide */
+body.hide-sidebar #menu {
+	margin-left: -180px;
+}
+body.hide-sidebar #wrapper {
+	margin-left: 0;
+}
+
+/* Layout */
+html {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	overflow-x: hidden!important;
+}
+body {
+	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background-color: #fff;
+	font-size: 13px;
+	color: #6a6c6f;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+#header {
+	background-color: #fff;
+	display: block;
+	height: 62px;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	border-bottom: 1px solid #e4e5e7;
+}
+#menu {
+	width: 180px;
+	bottom: 0;
+	float: left;
+	left: 0;
+	position: absolute;
+	top: 62px;
+	transition: all 0.4s ease 0s;
+}
+#wrapper {
+	margin: 0 0 0 180px;
+	padding: 0;
+	background: #f1f3f6;
+	border-left: 1px solid #e4e5e7;
+	transition: all 0.4s ease 0s;
+	position: relative;
+	min-height: 100%;
+}
+.content {
+	padding: 25px 40px 40px 40px;
+	min-width: 320px;
+}
+.footer {
+	padding: 10px 18px;
+	background: #ffffff;
+	border-top: 1px solid #e4e5e7;
+	transition: all 0.4s ease 0s;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+@media (max-width: 768px) {
+	.content {
+		padding: 15px 15px 15px 15px;
+		min-width: 320px;
+	}
+}
+
+.color-line {
+	background: #f7f9fa;
+	height: 6px;
+	background-image: -webkit-linear-gradient(left, #34495e, #34495e 25%, #9b59b6 25%, #9b59b6 35%, #3498db 35%, #3498db 45%, #62cb31 45%, #62cb31 55%, #ffb606 55%, #ffb606 65%, #e67e22 65%, #e67e22 75%, #e74c3c 85%, #e74c3c 85%, #c0392b 85%, #c0392b 100%);
+	background-image: -moz-linear-gradient(left, #34495e, #34495e 25%, #9b59b6 25%, #9b59b6 35%, #3498db 35%, #3498db 45%, #62cb31 45%, #62cb31 55%, #ffb606 55%, #ffb606 65%, #e67e22 65%, #e67e22 75%, #e74c3c 85%, #e74c3c 85%, #c0392b 85%, #c0392b 100%);
+	background-image: -ms-linear-gradient(left, #34495e, #34495e 25%, #9b59b6 25%, #9b59b6 35%, #3498db 35%, #3498db 45%, #62cb31 45%, #62cb31 55%, #ffb606 55%, #ffb606 65%, #e67e22 65%, #e67e22 75%, #e74c3c 85%, #e74c3c 85%, #c0392b 85%, #c0392b 100%);
+	background-image: linear-gradient(to right, #34495e, #34495e 25%, #9b59b6 25%, #9b59b6 35%, #3498db 35%, #3498db 45%, #62cb31 45%, #62cb31 55%, #ffb606 55%, #ffb606 65%, #e67e22 65%, #e67e22 75%, #e74c3c 85%, #e74c3c 85%, #c0392b 85%, #c0392b 100%);
+	background-size: 100% 6px;
+	background-position: 50% 100%;
+	background-repeat: no-repeat;
+}
+.fixed-navbar #header {
+	width: 100%;
+	position: fixed;
+	z-index: 1000;
+}
+.fixed-navbar #wrapper {
+	top: 62px;
+}
+.fixed-sidebar #menu {
+	position: fixed;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	width: 197px;
+}
+.fixed-sidebar.show-sidebar #menu {
+	width: 180px;
+}
+
+	</style>
+
+</head>
+<body class="fixed-navbar fixed-sidebar"> <!-- << Add class .hide-sidebar -->
+
+
+<!-- Header -->
+<div id="header">
+	<div class="color-line"></div>
+	<nav>
+		<div class="header-link hide-menu"><i class="fa fa-bars"></i></div>
+	</nav>
+</div>
+
+<!-- Navigation -->
+<aside id="menu" style="border: 5px solid orange">
+	<div id="navigation">
+		<ul class="nav" id="side-menu">
+			<li>
+				<a href="index.html"> <span class="nav-label">Dashboard</span> <span class="label label-success pull-right">v.1</span> </a>
+			</li>
+		</ul>
+	</div>
+</aside>
+
+<!-- Main Wrapper -->
+<main id="wrapper">
+
+	<!-- Content -->
+	<div class="content">
+		<div class="row">
+			<div class="col-lg-12">
+				<h2>Heading 2</h2>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer-->
+	<footer class="footer">
+		<b>Project Name &copy; 2001-2016</b>
+		<span class="pull-right">
+			Some footer message!
+		</span>
+	</footer>
+
+</main>
+
+
+
+</body>
+</html>

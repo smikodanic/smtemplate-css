@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>One Row</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap-theme.min.css">
+
+	<link rel="stylesheet" type="text/css" href="../css/01one_row.css">
+
+</head>
+
+<body>
+
+	<div id="wrapper">
+		<button class="btn btn-default"><i class="fa fa-2x fa-bars"></i></button>
+
+		<h3>One Row Dynamic Layout</h3>
+		<p>Description:
+			<br>Dynamic layout with one row and one column. BODY and DIV has 100% full height.
+			<br>When button is clicked, DIV#wrapper gets <b>margin-left: 200px</b>;
+		</p>
+
+		<br>
+		<br>
+		<br>
+
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur dignissimos, tempore neque repudiandae,
+			dolorum asperiores aut. Magnam molestiae labore id non totam, voluptatum odio expedita,
+			autem, minima, officiis at minus?
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur dignissimos, tempore neque repudiandae,
+			dolorum asperiores aut. Magnam molestiae labore id non totam, voluptatum odio expedita,
+			autem, minima, officiis at minus?
+		</p>
+
+
+
+	</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function () {
+		$('button').on('click', function () {
+			if ($('#wrapper').hasClass('reducedWidth')) {
+				$('#wrapper').removeClass('reducedWidth');
+			} else {
+				$('#wrapper').addClass('reducedWidth');
+			}
+
+		})
+	});
+</script>
+
+</body>
+</html>

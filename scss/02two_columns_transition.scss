@@ -1,0 +1,49 @@
+aside {
+	position: fixed;
+	top: 0;
+	bottom: 0; //spread to the bottom
+	left: 0;
+	width: 200px;
+	background-color: #F1F1F1;
+	padding: 8px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+section {
+	background-color: #F1F3F6;
+	color: #73879C;
+	position: absolute;
+	top: 0;
+	left: 200px;
+	padding: 21px 13px;
+	min-height: 800px;
+	border-left: 1px solid #BCBCBC;
+	transition: left 0.7s ease;
+
+	& button {
+		position: absolute;
+		top: 8px;
+		right: 8px;
+	}
+
+	& footer {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		padding: 5px 8px;
+		border-top: 1px solid #BCBCBC;
+		background-color: #fff;
+		color: Gray;
+		text-align: center;
+	}
+}
+
+
+body {
+
+	&.hide-sidebar > section {
+		left: 0;
+	}
+}

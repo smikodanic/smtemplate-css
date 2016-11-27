@@ -1,0 +1,14 @@
+body {
+  height: 100%;
+  background-color: Gray;
+}
+
+div {
+  background-color: #eee;
+  padding: 21px 13px;
+  min-height: 800px;
+  transition: margin 0.5s ease;
+}
+div.reducedWidth {
+  margin-left: 200px;
+}

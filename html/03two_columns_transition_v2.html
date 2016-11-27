@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Two Columns - Transition v.2.</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap-theme.min.css">
+
+	<link rel="stylesheet" type="text/css" href="../css/02two_columns_transition_v2.css">
+
+</head>
+
+<body>
+
+	<div id="sidebarwrapper">
+		<button class="btn btn-sm btn-default"></button>
+		<nav>
+			<h4>MENU (collapsible)</h4>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus nemo id consequatur
+			aliquam debitis recusandae quo quas, ut perspiciatis reiciendis magni dolor et neque eaque
+			qui facilis odio fugit placeat.
+
+			<br><br><br><br><br>
+			<br><br><br><br><br>
+			<br><br><br><br><br>
+			<br><br><br><br><br>
+			<br><br><br><br><br>
+			<br><br><br><br><br>
+			<br><br><br><br><br>
+			<br><br><br><br><br>
+			<br><br><br><br><br>
+			<br><br><br><br><br>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta eum, quis ratione corrupti itaque hic ducimus voluptates corporis
+			sed vitae commodi veniam quas! Doloremque maiores sit, molestias suscipit unde exercitationem.
+			<br><br>-- END --<br><br>
+		</nav>
+	</div>
+
+
+	<section>
+
+		<h2>SECTION</h2>
+		<br><br>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta eum, quis ratione corrupti itaque hic ducimus voluptates corporis
+		sed vitae commodi veniam quas! Doloremque maiores sit, molestias suscipit unde exercitationem.
+
+		<br><br><br><br><br>
+		<br><br><br><br><br>
+		<br><br><br><br><br>
+		<br><br><br><br><br>
+		<br><br><br><br><br>
+		<br><br><br><br><br>
+		<br><br><br><br><br>
+		<br><br><br><br><br>
+		<br><br><br><br><br>
+		<br><br><br><br><br>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta eum, quis ratione corrupti itaque hic ducimus voluptates corporis
+		sed vitae commodi veniam quas! Doloremque maiores sit, molestias suscipit unde exercitationem.
+		<br><br>-- BOTTOM --<br><br>
+
+		<footer>
+			Cloud j.d.o.o. &copy; 2016
+			<span class="pull-right">Footer here!</span>
+		</footer>
+
+	</section>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function () {
+		$('button').on('click', function () {
+			if ($('#sidebarwrapper').hasClass('show-sidebar')) {
+				$('#sidebarwrapper').removeClass('show-sidebar');
+			} else {
+				$('#sidebarwrapper').addClass('show-sidebar');
+			}
+
+		})
+	});
+</script>
+
+</body>
+</html>

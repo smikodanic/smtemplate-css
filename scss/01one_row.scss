@@ -1,0 +1,17 @@
+body {
+	// border: 3px solid red;
+	height: 100%; //full height
+	background-color: Gray;
+}
+
+div {
+	// border: 2px solid green;
+	background-color: #eee;
+	padding: 21px 13px;
+	min-height: 800px;
+	transition: margin 0.5s ease;
+
+	&.reducedWidth {
+		margin-left: 200px;
+	}
+}

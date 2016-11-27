@@ -1,0 +1,33 @@
+body {
+  height: 100%;
+  background-color: Gray;
+}
+body.hide-sidebar aside {
+  display: none;
+}
+body.hide-sidebar section {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+aside {
+  background-color: #F1F1F1;
+  display: table-cell;
+  width: 200px;
+  padding: 21px 8px;
+}
+
+section {
+  background-color: #F1F3F6;
+  color: #73879C;
+  display: table-cell;
+  padding: 34px 13px;
+  border-left: 1px solid #BCBCBC;
+}
+section button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  color: red;
+}

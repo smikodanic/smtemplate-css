@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Two Columns</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap-theme.min.css">
+
+	<link rel="stylesheet" type="text/css" href="../css/02two_columns.css">
+
+</head>
+
+<body>
+
+	<aside>
+		<h4>SIDEBAR MENU</h4>
+
+		<br><br><br><br><br><br>
+		<br><br><br><br><br><br>
+		<br><br><br><br><br><br>
+		<br><br><br><br><br><br>
+		<br><br><br><br><br><br>
+		<br><br><br><br><br><br>
+		<br><br><br><br><br><br>
+		<br><br><br><br><br><br>
+		<br><br><br><br><br><br>
+		<br><br><br><br><br><br>
+
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto cum
+		aperiam nulla blanditiis neque explicabo error ipsum, maiores delectus culpa
+		repellat expedita pariatur cumque consectetur voluptate a animi ut vel!
+		<br><br> BOTTOM
+	</aside>
+
+
+	<section>
+		<button class="btn btn-default"><i class="fa fa-bars"></i></button>
+
+		<h2>SECTION</h2>
+		<br><br>
+		<br>Notice: Sidebar and section will always have same height because of <b>display: table-cell;</b>
+		<br><br>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta eum, quis ratione corrupti itaque hic ducimus voluptates corporis
+		sed vitae commodi veniam quas! Doloremque maiores sit, molestias suscipit unde exercitationem.
+
+		<br><br><br><br><br><br>
+		<br><br><br><br><br><br>
+		<br><br><br><br><br><br>
+		<br><br><br><br><br><br>
+		<br><br><br><br><br><br>
+		<br><br><br><br><br><br>
+
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto cum
+		aperiam nulla blanditiis neque explicabo error ipsum, maiores delectus culpa
+		repellat expedita pariatur cumque consectetur voluptate a animi ut vel!
+		<br><br> BOTTOM
+
+	</section>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function () {
+		$('button').on('click', function () {
+			if ($('body').hasClass('hide-sidebar')) {
+				$('body').removeClass('hide-sidebar');
+			} else {
+				$('body').addClass('hide-sidebar');
+			}
+
+		})
+	});
+</script>
+
+</body>
+</html>
