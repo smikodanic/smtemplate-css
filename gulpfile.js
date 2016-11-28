@@ -56,7 +56,7 @@ gulp.task('scss', function () {
 });
 
 
-gulp.task('uglify-css', function () {
+gulp.task('css-minify', function () {
     'use strict';
     gulp.src('css/**/*.css')
         .pipe(cssmin())
@@ -69,7 +69,7 @@ gulp.task('uglify-css', function () {
 gulp.task('build-dist', ['rimraf-dist', 'scss'], function () {
     'use strict';
     setTimeout(function () {
-        gulp.start('uglify-css');
+        gulp.start('css-minify');
     }, 800);
 });
 
