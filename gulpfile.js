@@ -6,7 +6,7 @@ var pkg = require('./package.json');
 
 //SASS NMPs
 var sass = require('gulp-sass');
-var autoprefixer = require('gulp-autoprefixer'); //add vendor prefixes: -webkit-, -moz-, -o-,
+var autoprefixer = require('gulp-autoprefixer'); //add vendor prefixes: -webkit-, -ms-, -o-,
 var sourcemaps = require('gulp-sourcemaps'); //create .map files for scss debugging in browser
 var cssmin = require('gulp-cssmin'); //create .min files
 var rename = require('gulp-rename');
@@ -46,7 +46,7 @@ gulp.task('scss', function () {
             'scss/*.scss'
         )
         .pipe(sourcemaps.init())
-        .pipe(sass({outputStyle: 'compressed'}))
+        .pipe(sass())
         .pipe(header(banner, {pkg: pkg}))
         .pipe(sourcemaps.write({includeContent: false}))
         .pipe(sourcemaps.init({loadMaps: true}))
