@@ -6,8 +6,10 @@ var pkg = require('./package.json');
 
 //SASS NMPs
 var sass = require('gulp-sass');
-var autoprefixer = require('gulp-autoprefixer');
-var sourcemaps = require('gulp-sourcemaps');
+var autoprefixer = require('gulp-autoprefixer'); //add vendor prefixes: -webkit-, -moz-, -o-,
+var sourcemaps = require('gulp-sourcemaps'); //create .map files for scss debugging in browser
+var cssmin = require('gulp-cssmin'); //create .min files
+var rename = require('gulp-rename');
 
 
 //banner
@@ -37,14 +39,14 @@ gulp.task('webserver', function () {
 });
 
 
-gulp.task('scss-sass', function () {
+gulp.task('scss', function () {
     'use strict';
     gulp
         .src(
             'scss/*.scss'
         )
         .pipe(sourcemaps.init())
-        .pipe(sass())
+        .pipe(sass({outputStyle: 'compressed'}))
         .pipe(header(banner, {pkg: pkg}))
         .pipe(sourcemaps.write({includeContent: false}))
         .pipe(sourcemaps.init({loadMaps: true}))
@@ -54,11 +56,20 @@ gulp.task('scss-sass', function () {
 });
 
 
+gulp.task('uglify-css', function () {
+    'use strict';
+    gulp.src('css/**/*.css')
+        .pipe(cssmin())
+        .pipe(rename({suffix: '.min'}))
+        .pipe(gulp.dest('css'));
+});
+
+
 //first delete then create /css/ directory
-gulp.task('build-dist', ['rimraf-dist'], function () {
+gulp.task('build-dist', ['rimraf-dist', 'scss'], function () {
     'use strict';
     setTimeout(function () {
-        gulp.start('scss-sass');
+        gulp.start('uglify-css');
     }, 800);
 });
 

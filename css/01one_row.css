@@ -4,19 +4,8 @@
 , * Licensed under MIT 
 , */
 
-body {
-  height: 100%;
-  background-color: Gray; }
+body{height:100%;background-color:Gray}div{background-color:#eee;padding:21px 13px;min-height:800px;-webkit-transition:margin 0.5s ease;transition:margin 0.5s ease}div.reducedWidth{margin-left:200px}
 
-div {
-  background-color: #eee;
-  padding: 21px 13px;
-  min-height: 800px;
-  -webkit-transition: margin 0.5s ease;
-  transition: margin 0.5s ease; }
-  div.reducedWidth {
-    margin-left: 200px; }
-
-/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIjAxb25lX3Jvdy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7OztBQUFBLElBQUksQ0FBQztFQUVKLE1BQU0sRUFBRSxJQUFLO0VBQ2IsZ0JBQWdCLEVBQUUsSUFBSyxHQUN2Qjs7QUFFRCxHQUFHLENBQUM7RUFFSCxnQkFBZ0IsRUFBRSxJQUFLO0VBQ3ZCLE9BQU8sRUFBRSxTQUFVO0VBQ25CLFVBQVUsRUFBRSxLQUFNO0VBQ2xCLFVBQVUsRUFBRSxnQkFBaUIsR0FLN0I7RUFWRCxHQUFHLEFBT0QsYUFBYSxDQUFDO0lBQ2QsV0FBVyxFQUFFLEtBQU0sR0FDbkIiLCJmaWxlIjoiMDFvbmVfcm93LmNzcyJ9 */
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIjAxb25lX3Jvdy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7OztBQUFBLElBQUksQUFBQyxDQUVKLE1BQU0sQ0FBRSxJQUFLLENBQ2IsZ0JBQWdCLENBQUUsSUFBSyxDQUN2QixBQUVELEdBQUcsQUFBQyxDQUVILGdCQUFnQixDQUFFLElBQUssQ0FDdkIsT0FBTyxDQUFFLFNBQVUsQ0FDbkIsVUFBVSxDQUFFLEtBQU0sQ0FDbEIsVUFBVSxDQUFFLGdCQUFpQixDQUw5QixBQVVDLEdBVkUsQUFPRCxhQUFhLEFBQUMsQ0FDZCxXQUFXLENBQUUsS0FBTSxDQUNuQiIsImZpbGUiOiIwMW9uZV9yb3cuY3NzIn0= */
 
 /*# sourceMappingURL=01one_row.css.map */

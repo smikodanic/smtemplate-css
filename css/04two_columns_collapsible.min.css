@@ -1,0 +1,5 @@
+/*!
+, *  v1.0.0 ()
+, * Copyright 2014-2016, Saša Mikodanić
+, * Licensed under MIT 
+, */div#sidebarwrapper{position:fixed;background-color:#E3E3E3;border:1px solid #ccc;top:50px;left:-200px;width:200px;min-height:600px;padding:45px 8px;opacity:.9;-webkit-transition:all .7s ease;transition:all .7s ease;z-index:1000;color:#111}div#sidebarwrapper>button{position:absolute;top:0;right:-30px;outline:0}div#sidebarwrapper>button:after{content:">>";color:#000;font-weight:700}div#sidebarwrapper>nav{position:absolute;overflow-y:scroll;max-height:550px}div#sidebarwrapper.show-sidebar{left:0}div#sidebarwrapper.show-sidebar>button{right:0}div#sidebarwrapper.show-sidebar>button:after{content:"X";font-weight:400}section{position:absolute;padding:55px;background-color:#F1F3F6;color:#73879C}section>footer{position:absolute;bottom:0;left:0;width:100%;padding:5px 8px;border-top:1px solid #BCBCBC;background-color:#fff;text-align:center}

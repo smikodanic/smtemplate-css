@@ -1,0 +1,5 @@
+/*!
+, *  v1.0.0 ()
+, * Copyright 2014-2016, Saša Mikodanić
+, * Licensed under MIT 
+, */body{height:100%;background-color:Gray}body.hide-sidebar aside{display:none}aside,section{display:table-cell}body.hide-sidebar section{position:absolute;left:0;top:0}aside{background-color:#F1F1F1;width:200px;padding:21px 8px}section{background-color:#F1F3F6;color:#73879C;padding:34px 13px;border-left:1px solid #BCBCBC}section button{position:absolute;top:8px;right:8px;color:red}
