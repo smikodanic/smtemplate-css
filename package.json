@@ -1,7 +1,7 @@
 {
-  "name": "generator-smtemplate",
+  "name": "smtemplate-css",
   "version": "1.0.0",
-  "description": "Yeoman's template scaffolding tool.",
+  "description": "CSS Responsive, Dynamic Layouts and CSS 3 elements.",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,10 +11,12 @@
     "url": "git@github.com:smikodanic/generator-smtemplate.git"
   },
   "keywords": [
-    "yeoman-generator",
     "template",
-    "generator",
-    "yeaoman"
+    "layout",
+    "css",
+    "sass",
+    "scss",
+    "sidebar"
   ],
   "author": "Saša Mikodanić",
   "license": "MIT",
@@ -22,9 +24,10 @@
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
-    "gulp-compass": "^2.1.0",
     "gulp-connect": "^5.0.0",
     "gulp-header": "^1.8.8",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.9.1",
     "rimraf": "^2.5.2"
   }
 }

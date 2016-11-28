@@ -1,10 +1,10 @@
 {
-  "name": "smTemplate Layouts",
+  "name": "smtemplate-css",
   "version": "1.0.0",
   "authors": [
     "Saša Mikodanić"
   ],
-  "description": "CSS Layouts",
+  "description": "CSS Responsive, Dynamic Layouts and CSS 3 elements.",
   "moduleType": [
     "globals"
   ],

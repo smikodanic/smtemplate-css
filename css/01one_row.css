@@ -1,14 +1,22 @@
+/*!
+, *  v1.0.0 ()
+, * Copyright 2014-2016, Saša Mikodanić
+, * Licensed under MIT 
+, */
+
 body {
   height: 100%;
-  background-color: Gray;
-}
+  background-color: Gray; }
 
 div {
   background-color: #eee;
   padding: 21px 13px;
   min-height: 800px;
-  transition: margin 0.5s ease;
-}
-div.reducedWidth {
-  margin-left: 200px;
-}
+  -webkit-transition: margin 0.5s ease;
+  transition: margin 0.5s ease; }
+  div.reducedWidth {
+    margin-left: 200px; }
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIjAxb25lX3Jvdy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7OztBQUFBLElBQUksQ0FBQztFQUVKLE1BQU0sRUFBRSxJQUFLO0VBQ2IsZ0JBQWdCLEVBQUUsSUFBSyxHQUN2Qjs7QUFFRCxHQUFHLENBQUM7RUFFSCxnQkFBZ0IsRUFBRSxJQUFLO0VBQ3ZCLE9BQU8sRUFBRSxTQUFVO0VBQ25CLFVBQVUsRUFBRSxLQUFNO0VBQ2xCLFVBQVUsRUFBRSxnQkFBaUIsR0FLN0I7RUFWRCxHQUFHLEFBT0QsYUFBYSxDQUFDO0lBQ2QsV0FBVyxFQUFFLEtBQU0sR0FDbkIiLCJmaWxlIjoiMDFvbmVfcm93LmNzcyJ9 */
+
+/*# sourceMappingURL=01one_row.css.map */

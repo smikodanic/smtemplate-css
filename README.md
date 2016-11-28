@@ -1,4 +1,4 @@
-# SM Template CSS
+# SM Template CSS (smtemplate-css)
 > CSS Responsive, Dynamic Layouts and CSS 3 elements.
 
 ## Demo
