@@ -32,7 +32,30 @@
 		<br>
 		<br>
 
-		<h3>List of CSS elements</h3>
+		<h3>Flexbox Cheat Sheet</h3>
+		Short tutorial is <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">here</a>.
+		<br>Browser compatibility is <a href="http://caniuse.com/#feat=flexbox">here</a>.
+<pre>
+.flexcontainer {
+  display: flex | inline-flex;
+  flex-direction: row | row-reverse | column | column-reverse;
+  flex-wrap: nowrap | wrap | wrap-reverse;
+  flex-flow: ‘flex-direction’ || ‘flex-wrap’ <b>//shorthand</b>
+  justify-content: flex-start | flex-end | center | space-between | space-around; <b>//horizontal align of items</b>
+  align-items: flex-start | flex-end | center | baseline | stretch; <b>//vertical align of items</b>
+  align-content: flex-start | flex-end | center | space-between | space-around | stretch; <b>//align flex lines</b>
+
+}
+
+.flexitem {
+  order: Integer;
+  flex-grow: Number; /* default 0 */
+  flex-shrink: Number; /* default 1 */
+  flex-basis: Length(px, em, %) | auto; /* default auto */
+  flex: none | [ 'flex-grow' 'flex-shrink'? || 'flex-basis' ] <b>//shorthand</b>
+  align-self: auto | flex-start | flex-end | center | baseline | stretch; <b>//same as align-items but for specific item</b>
+}
+</pre>
 
 	</div>
 </body>

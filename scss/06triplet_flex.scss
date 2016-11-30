@@ -1,1 +1,145 @@
+//VARS
+$topnavbar-min-height: 50; //px
+$content-min-height: 750; //px
+$sidebar-width: 210; //px should be <230
+$border-color: #bcbcbc;
+$nav-bkg-color: #f1f1f1;
 
+
+html, body {
+	height: 100%;
+	background-color: $nav-bkg-color;
+}
+
+
+// TOP FLEX CONTAINER
+div.flexcontainer-top {
+	// border: 2px solid green;
+	background-color: $nav-bkg-color;
+	border-bottom: 1px solid $border-color;
+	position: static;
+	width: 100%;
+	min-height: $topnavbar-min-height + unquote("px");
+
+	//flex properties
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start; //horizontal align of items
+	align-items: flex-start; //vertical align of items
+	align-content: stretch; //align flex lines
+
+	& > #toptitle {
+		text-align: center;
+		vertical-align: middle;
+		border-right: 1px solid $border-color;
+		color: darken($nav-bkg-color, 50);;
+		background-color: darken($nav-bkg-color, 3);
+
+		//flex properties
+		order: 1;
+		flex: 0 0 $sidebar-width + unquote("px");
+		align-self: stretch;
+
+		& > h1,h2,h3,h4 {
+			margin-top: 13px;
+			text-shadow: 2px 2px 3px #ccc;
+			letter-spacing: 0.13em;
+  	}
+
+	}
+
+
+	& > #sidebar-switch {
+		text-align: center;
+
+		//flex properties
+		order: 1;
+		flex: 0 0 $sidebar-width * 0.3 + unquote("px");
+		align-self: center;
+
+		& > button {
+			outline: none;
+		}
+	}
+
+
+	& > #topnav {
+		text-align: right;
+		padding-right: 10px;
+
+		//flex properties
+		order: 1;
+		flex: 1 1 500px;
+		align-self: center;
+	}
+
+}
+
+
+// MAIN (MENU + CONTENT) CONTAINER
+div.flexcontainer-main {
+	// border: 2px solid Navy;
+	position: static;
+	width: 100%;
+
+	//flex properties
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start; //horizontal align of items
+	align-items: flex-start; //vertical align of items
+	align-content: flex-start; //align flex lines
+
+
+	& > #sidebar {
+		// border: 2px solid red;
+		background-color: $nav-bkg-color;
+		border-right: 1px solid $border-color;
+		color: #111;
+		padding: 21px 8px;
+		transition: flex-basis 0.8s, color 0.1s ease;
+
+
+		//flex properties
+		order: 1;
+		flex: 0 0 $sidebar-width + unquote("px");
+		align-self: stretch;
+
+		&.hide-sidebar {
+			// overflow-y: hidden;
+			color: $nav-bkg-color;
+			flex-basis: 0px;
+			margin-left: -18px;
+			overflow-x: hidden;
+		}
+	}
+
+	& > #content {
+		// border: 2px solid orange;
+		background-color: #F1F3F6;
+		color: #73879C;
+		padding: 21px 13px;
+		min-height: $content-min-height + unquote("px");
+		overflow-x: scroll;
+
+		//flex properties
+		order: 2;
+		flex: 1 1 100px;
+		align-self: stretch;
+	}
+
+	& > footer {
+		padding: 5px 8px;
+		border-top: 1px solid $border-color;
+		background-color: #fff;
+		color: Gray;
+		text-align: center;
+
+		//flex properties
+		order: 3;
+		flex: 1 1 100%;
+		align-self: flex-start;
+	}
+
+}
